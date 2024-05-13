@@ -1,5 +1,5 @@
 
-### Criando um Site de Vendas com Bootstrap, CSS e HTML
+### Criando um Site de Vendas de Pizza com Bootstrap, CSS e HTML
 
 #### Configuração Inicial
 
