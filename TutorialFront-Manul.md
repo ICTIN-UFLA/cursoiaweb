@@ -53,21 +53,21 @@ Crie um arquivo chamado `index.html`. Este será o arquivo principal do seu site
     </nav>
 
     <!-- Carrossel de imagens -->
-    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel" data-bs-interval="3000">
         <div class="carousel-indicators">
             <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
             <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
             <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
         </div>
         <div class="carousel-inner">
-            <div class="carousel-item active">
-                <img src="https://via.placeholder.com/1920x1080" class="d-block w-100" alt="Pizza 1">
+            <div class="carousel-item active" data-bs-interval="3000">
+                <img src="https://i.pinimg.com/originals/1f/df/0d/1fdf0d7aaaebcc093b8fc00ce384f50b.jpg" class="d-block w-100" alt="Pizza 1">
             </div>
-            <div class="carousel-item">
-                <img src="https://via.placeholder.com/1920x1080" class="d-block w-100" alt="Pizza 2">
+            <div class="carousel-item" data-bs-interval="3000">
+                <img src="https://www.anamariareceitas.com.br/wp-content/uploads/2022/11/Pizza-de-calabresa.jpg" class="d-block w-100" alt="Pizza 2">
             </div>
-            <div class="carousel-item">
-                <img src="https://via.placeholder.com/1920x1080" class="d-block w-100" alt="Pizza 3">
+            <div class="carousel-item" data-bs-interval="3000">
+                <img src="https://i0.wp.com/acheisuareceita.com.br/wp-content/uploads/2024/02/imagem_2024-02-16_081527287.png?fit=1920%2C1080&ssl=1" class="d-block w-100" alt="Pizza 3">
             </div>
         </div>
         <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
@@ -86,8 +86,12 @@ Crie um arquivo chamado `index.html`. Este será o arquivo principal do seu site
         <p>Explore nosso cardápio recheado de sabores irresistíveis e faça seu pedido com apenas alguns cliques!</p>
         <a href="menu.html" class="btn btn-primary btn-lg">Peça Já</a>
     </div>
+
+    <!-- Bootstrap JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
+
 ````
 
 #### Passo 3: Criando as Outras Páginas
@@ -242,6 +246,40 @@ Esta página irá detalhar as opções de pagamento disponíveis.
 #### Passo 7 Criar o Arquivo de Estilos (styles.css)
 
 Primeiro, crie o arquivo `styles.css` com o conteúdo abaixo para definir os estilos básicos do seu site.
+
+````css
+body {
+    background-color: #fff5e6;
+    color: #333;
+}
+
+.navbar {
+    margin-bottom: 20px;
+    background-color: #fff;
+    border-bottom: 2px solid #ccc;
+}
+
+.carousel-item img {
+    height: 500px; /* Ajuste conforme necessário */
+    object-fit: cover;
+}
+
+.container h1 {
+    margin-top: 20px;
+}
+
+.btn-primary {
+    color: #fff;
+    background-color: #ff4500;
+    border-color: #ff4500;
+}
+
+.btn-primary:hover {
+    background-color: #e03c00;
+    border-color: #c03200;
+}
+
+````
 
 
 ### Testando e Ajustando
